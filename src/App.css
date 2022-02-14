@@ -1,0 +1,223 @@
+.App {
+  text-align: center;
+}
+
+:root {
+  --color-1: #242526;
+  --color-2: white;
+  --color-3: #0084ff;
+  --color-4: grey;
+  --color-5: #eb4034;
+  --color-6: #333;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* AdminPenal */
+
+.AdminPenal {
+  height: 100vh;
+}
+.addBtn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+  width: 90px;
+  height: 90px;
+  border: 1px solid white;
+  border-radius: 90px;
+  text-align: center;
+}
+
+/* AddForm */
+.AddForm {
+  margin-top: 10px;
+  max-width: 1000px;
+}
+
+/* Image */
+.ProductAddImage {
+  position: relative;
+  width: 50%;
+  border: 1px solid #ffc107;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #ffc107;
+}
+
+.ProductAddImage:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.ImageUploadText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Sing In */
+
+section {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  box-shadow: 1px 2px 10px black;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+section h3 {
+  text-align: center;
+  font-size: 20px;
+  color: var(--color-4);
+}
+section .form {
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.input_container {
+  margin-top: 10px;
+}
+.input_container input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  margin-top: 10px;
+
+  border: 1px solid var(--color-6);
+  border-radius: 5px;
+}
+
+/* AdminNavbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  padding: 0px 20px;
+  background-color: var(--color-1);
+  border-bottom: 1px solid var(--color-6);
+}
+nav a {
+  color: var(--color-2);
+  text-decoration: none;
+}
+nav div a {
+  margin-right: 20px;
+}
+
+.card p {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.ChatText {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.ChatText:hover {
+  color: #ffc107;
+}
+
+.ProductDetailContainer {
+  min-height: 80vh;
+  border: 1px solid #ffc107;
+  margin: 2%;
+}
+
+@media screen and (min-width: 480px) {
+  .ProductDetailContainer {
+    display: flex;
+  }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Add a background color and some padding around the form */
+.Contectcontainer {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.MassageDetails p {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.MassageDetailParrent {
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
